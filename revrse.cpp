@@ -1,15 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 void reverse(char * word){
-   printf("Enter a string : ");
 
+   printf("Enter a string : \n");
    gets(word);
+
    strrev(word);
-   printf("Reverse of entered string is : %s", word);
+
+   printf("Reverse of the string you entered : %s\n", word);
 }
 int main()
 {
-    char x;
-    reverse(&x);
-    return 0;
+   char x;
+   reverse(&x);
+
+   return 0;
 }
